@@ -1,9 +1,64 @@
-Spec17
+Ghw
 ---------------
 
-These are my detailed notes about projects I am working on and/or have worked on.  
+This documents a material-ui tutorial I am working on called ghw.
 
-# React
+# Introduction
+
+I have been working with Material-UI now for about one year and
+over that time period I have worked on lots of different projects
+that cover a range of topics and from that knowledge I have come
+up with a tutorial that hits the highlights of things people need
+to know.
+
+Over time this tutorial will focus on a set of github repositories
+that show developers real code used in
+moderately complex real world applications.
+
+## Living Document
+
+If you want to add to this tutorial and or have an interesting
+real world application
+that highlights concepts not addressed in this tutorial
+that uses Material-UI at the core of the architecture
+and want to document
+that application in the flow of this document
+we can have a conversation about how to integrate
+
+## Create React App
+
+First and foremost I have decided to start out with all of the
+tutorial repos using
+[Create-React-App](https://github.com/facebook/create-react-app).
+
+The reason for this decision is because if you look at the
+[Material-UI doc](https://material-ui.com/) you will note that
+it uses
+[Nextjs](https://nextjs.org/) at the core for driving its documentation.
+
+Initially, I thought ok cool, I want to build a Material-UI drawer system
+that uses CRA (Create-React-App) instead of Nextjs. At the time, I was relatively new to using Material-UI and thought "oh this would be easy".  Turns out it was more tricky than I initially thought and it ended up taking me
+weeks to really come up with a solution I was happy with.
+
+So saving people time on just this one simple concept seemed like something
+that would be valuable to have documented.  From there, I started working on
+a more sophisticated application that used
+[Menus](https://material-ui.com/demos/menus/) instead of [Drawers](https://material-ui.com/demos/drawers/) and by that time we are off to the races
+so to speak.  Fast forward about a year, and I am finally getting around
+to writing all of these concepts up along with polishing up some nice
+repos that elucidate the concepts.
+
+All of the code repositories that this tutorial will reference
+
+## AppBar
+
+At the top of the hierarchy are ways to organize information or
+websites.  All websites need to have an
+[AppBar](https://material-ui.com/demos/app-bar/)
+
+## Menus
+
+## Drawers
 
 The main reason for focusing on React now is because of
 [Facebook's Relay](https://facebook.github.io/relay/).  
