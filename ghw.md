@@ -53,7 +53,12 @@ npm start
 
 At the top of the hierarchy are ways to organize information or
 websites.  All websites need to have an
-[AppBar](https://material-ui.com/demos/app-bar/)
+[AppBar](https://material-ui.com/demos/app-bar/).  A nice example
+of an AppBar in action is the
+[Material-UI Home Page](https://material-ui.com/).  
+There you will
+see the Icon button for drawer open and close.  In these repos you
+will see the same functionality.
 
 ## Menus
 
