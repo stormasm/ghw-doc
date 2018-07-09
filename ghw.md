@@ -1,7 +1,9 @@
-Ghw
+Material-UI Tutorial
 ---------------
 
-This documents a material-ui tutorial I am working on called ghw.
+This tutorial introduces some fundamental concepts that are helpful
+to understand if you want to be a productive developer in the
+Material-UI world.
 
 # Introduction
 
@@ -14,16 +16,6 @@ to know.
 Over time this tutorial will focus on a set of github repositories
 that show developers real code used in
 moderately complex real world applications.
-
-## Living Document
-
-If you want to add to this tutorial and or have an interesting
-real world application
-that highlights concepts not addressed in this tutorial
-that uses Material-UI at the core of the architecture
-and want to document
-that application in the flow of this document
-we can have a conversation about how to integrate
 
 ## Create React App
 
@@ -48,7 +40,14 @@ so to speak.  Fast forward about a year, and I am finally getting around
 to writing all of these concepts up along with polishing up some nice
 repos that elucidate the concepts.
 
-All of the code repositories that this tutorial will reference
+All of the code repositories that this tutorial will reference uses
+CRA which means they all come out of the box the same way with the
+same cadence of commands.
+
+```sh
+npm install
+npm start
+```
 
 ## AppBar
 
@@ -59,6 +58,27 @@ websites.  All websites need to have an
 ## Menus
 
 ## Drawers
+
+## Living Document
+
+If you want to add, edit, or modify this tutorial and or have an interesting
+real world application
+that highlights concepts not addressed in this tutorial
+that uses Material-UI at the core of the architecture
+and want to document
+that application in the flow of this document
+we can have a conversation about how to integrate.
+But for the most part, I hope you enjoy programming in Material-UI
+as much as I do.
+
+
+
+
+
+
+
+
+# DELETE EVERYTHING BELOW HERE
 
 The main reason for focusing on React now is because of
 [Facebook's Relay](https://facebook.github.io/relay/).  
