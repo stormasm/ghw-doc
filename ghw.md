@@ -76,12 +76,53 @@ we can have a conversation about how to integrate.
 But for the most part, I hope you enjoy programming in Material-UI
 as much as I do.
 
+# Refactoring AppDrawer from Next-js to Create-React-App
 
+This section will outline the details of how to transform the
+[Material-UI Docs](https://material-ui.com/)
+from Next-js to Create-React-App through a simple code
+example.  
 
+The example code for this section is inside the Github Repo
+[mui-drawer](https://github.com/stormasm/mui-drawer).  All code
+references not referring to the
+actual Material-UI code base will
+refer to the code inside **mui-drawer**.
 
+## The AppDrawer Concept
 
+Currently the Material-UI docs
+[AppDrawer](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/AppDrawer.js)
+are driven by
+[Next-js Routing](https://nextjs.org/docs/#routing)
+by using the Material-UI
+[Link](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/Link.js) component.
+In order to transform the
+[Drawer](https://material-ui.com/demos/drawers/)
+from Next-js to
+[React-Router](https://reacttraining.com/react-router/core/guides/philosophy)
+one must remove references to the Next-js Link inside the
+[AppDrawerNavItem](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/AppDrawerNavItem.js)
+and replace it with the React-Router
+[Link](https://reacttraining.com/react-router/web/api/Link).
 
+## The AppDrawer Details
 
+If you take a look at the Material-UI docs and open the drawer
+you will notice that all of the content inside the drawer is defined
+by an an object called **pages** which is located inside the file
+[withRoot](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/withRoot.js).
+
+Inside this file are two other important functions.
+
+* findActivePage
+* getChildContext
+
+These 3 pieces of code are ported over to their own file
+in the sample code called
+[Drawer](https://github.com/stormasm/mui-drawer/tree/master/fl7/src/pages)
+
+This code is the basis for the refactor.
 
 # DELETE EVERYTHING BELOW HERE
 
