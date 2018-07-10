@@ -120,9 +120,32 @@ Inside this file are two other important functions.
 
 These 3 pieces of code are ported over to their own file
 in the sample code called
-[Drawer](https://github.com/stormasm/mui-drawer/tree/master/fl7/src/pages)
+[Drawer](https://github.com/stormasm/mui-drawer/tree/master/fl7/src/Drawer.js)
 
 This code is the basis for the refactor.
+
+## The AppDrawer Code
+
+[mui-drawer](https://github.com/stormasm/mui-drawer)
+is a demo that allows you to navigate inside
+the drawer and show a example delineating a **Chapter**
+in a book and a **Section** inside of it...
+
+Along with the **pages** object and the two functions
+mentioned above this code is the other piece of logic
+located inside the file
+[Drawer](https://github.com/stormasm/mui-drawer/blob/master/fl7/src/Drawer.js)
+that completes the refactor.
+
+
+```js
+const ShowChapterSection = ({ match }) => (
+  <div>
+    <h3>Chapter: {match.params.ch}</h3>
+    <h4>Section: {match.params.sec}</h4>
+  </div>
+);
+```
 
 # DELETE EVERYTHING BELOW HERE
 
