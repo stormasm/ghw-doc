@@ -7,7 +7,9 @@ Material-UI world.
 
 # Introduction
 
-I have been working with Material-UI now for about one year and
+I have been working with Material-UI now
+since the release of
+[v1.0.0-beta.3](https://github.com/mui-org/material-ui/releases/tag/v1.0.0-beta.3) on July 29, 2017 and
 over that time period I have worked on lots of different projects
 that cover a range of topics and from that knowledge I have come
 up with a tutorial that hits the highlights of things people need
@@ -97,7 +99,9 @@ The data sets for Ghw are abstracted away from the underlying visualization so t
 
 Users are welcome to generate out their own custom views along with the data sets to their liking.
 
-# Refactoring AppDrawer from Next-js to Create-React-App
+# Next.js to Create-React-App
+
+This section is about refactoring AppDrawer from Next.js to Create-React-App
 
 This section will outline the details of how to transform the
 [Material-UI Docs](https://material-ui.com/)
@@ -180,13 +184,13 @@ documentation that makes Material-UI more accessible to others
 who are just getting started in Material-UI to those of us who
 have some experience but want to have a well documented medium
 scale application that shows best practices for software development
-in the Material-UI framework.
+in the Material-UI world.
 
 If you have a cool idea about a new view married with a JSON data
 source or just want to fix my grammatical or spelling mistakes
 you can find me on Gitter.
 
-But for the most part, I hope you enjoy programming in Material-UI
+But for the most part, I hope you enjoy programming with Material-UI
 as much as I do.
 
 # About this document
