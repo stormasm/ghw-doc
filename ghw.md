@@ -185,9 +185,27 @@ will see the same functionality.
 
 #### Gridlists
 
+The Gridlist is used to display a collection of Cards in both
+a single horizontal line and with three cards per row.
+
 #### Cards
 
+The cards in this demo contain different data types about
+each user that commits to a Github
+repository including:
+  * the user's name
+  * the user's location
+  * the user's username
+  * a link to the avatar of the user
+
+One can also grab data surrounding stars and forks as well.
+
 #### React-Autosuggest
+
+The Autosuggest is used to sort through many rows of a table and only display
+particular users that are from a location that gets selected from the list
+of user locations.  There may be more than one user displayed depending
+upon how many users there are that reside in a particular location.
 
 # Next.js to Create-React-App
 
