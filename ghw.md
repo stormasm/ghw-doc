@@ -1,9 +1,9 @@
-Material-UI Tutorial
+Material-UI Data Visualization Tutorial
 ---------------
 
 This tutorial introduces some fundamental concepts that are helpful
-to understand if you want to be a productive developer in the
-Material-UI world.
+to understand if you want to
+learn how to visualize data using Material-UI.
 
 # Introduction
 
@@ -13,11 +13,17 @@ since the release of
 over that time period I have worked on lots of different projects
 that cover a range of topics and from that knowledge I have come
 up with a tutorial that hits the highlights of things people need
-to know.
+to know when visualizing JSON data coming from an
+[API endpoint](https://stackoverflow.com/questions/2122604/what-is-an-endpoint).
 
-Over time this tutorial will focus on a set of github repositories
-that show developers real code used in
-moderately complex real world applications.
+The demos in the
+[Material-UI documentation](https://material-ui.com/)
+are an excellent starting
+point to better understand how Material-UI works in the context
+of one React component.
+
+But if you want a better understanding of a slightly more complicated
+real world Material-UI application this will hopefully serve your needs.
 
 ## Create React App
 
@@ -25,20 +31,20 @@ First and foremost I have decided to start out with all of the
 tutorial repos using
 [Create-React-App](https://github.com/facebook/create-react-app).
 
-The reason for this decision is because if you look at the
+The Material-UI doc is an excellent example of a real world application,
+however, the reason for using CRA is because if you look at the
 [Material-UI doc](https://material-ui.com/) you will note that
 it uses
-[Nextjs](https://nextjs.org/) at the core for driving its documentation.
+[Next.js](https://nextjs.org/) at the core for driving its routing.
 
-Initially, I thought ok cool, I want to build a Material-UI drawer system
-that uses CRA (Create-React-App) instead of Nextjs. At the time, I was relatively new to using Material-UI and thought "oh this would be easy".  Turns out it was more tricky than I initially thought and it ended up taking me
+Initially, I thought ok, I want to build a Material-UI drawer system
+that uses Create-React-App (CRA) instead of Next.js. At the time, I was relatively new to using Material-UI and thought "oh this would be easy".  Turns out it was more tricky than I initially thought and it ended up taking me
 weeks to really come up with a solution I was happy with.
 
 So saving people time on just this one simple concept seemed like something
 that would be valuable to have documented.  From there, I started working on
 a more sophisticated application that used
-[Menus](https://material-ui.com/demos/menus/) instead of [Drawers](https://material-ui.com/demos/drawers/) and by that time we are off to the races
-so to speak.  Fast forward about a year, and I am finally getting around
+[Menus](https://material-ui.com/demos/menus/) instead of [Drawers](https://material-ui.com/demos/drawers/) and that added more knowledge to understand and think about. Fast forward about a year, and I am finally getting around
 to writing all of these concepts up along with polishing up some nice
 repos that elucidate the concepts.
 
@@ -50,22 +56,6 @@ same cadence of commands.
 npm install
 npm start
 ```
-
-## AppBar
-
-At the top of the hierarchy are ways to organize information or
-websites.  All websites need to have an
-[AppBar](https://material-ui.com/demos/app-bar/).  A nice example
-of an AppBar in action is the
-[Material-UI Home Page](https://material-ui.com/).  
-There you will
-see the Icon button for drawer open and close.  In these repos you
-will see the same functionality.
-
-## Menus
-
-## Drawers
-
 
 # Data Visualization Framework
 
@@ -89,15 +79,115 @@ Examples of this can be
 
 The JSON data comes from any API call or endpoint that returns JSON data.  The API call can be GraphQL, REST, or static JSON data sources such as JSON files sitting on your local disk or in your Github repo.
 
-## Github Worlds Data Visualization
+## Github World Views
 
-Github Worlds (Ghw) is a Data Visualization Toolkit to display different types of views of data coming from the [Github API](https://developer.github.com/v4/).
-Its a platform from which to develop new views of data that shows the power of
-all of the information about open source tools, users, statistics and anything else that can be derived from this data possibly in concert with other data sets.
+The tutorial repository for Ghw is called **ghw-menu** and is
+[located here on Github](https://github.com/stormasm/ghw-menu).
+
+Github World (Ghw) is a set of views coming from the [Github API](https://developer.github.com/v4/).
+Using this data visualization framework one can develop new views of data for repositories, users, statistics and anything else that can be derived from this data possibly in concert with other data sets.
 
 The data sets for Ghw are abstracted away from the underlying visualization so that the only thing needed to display the data is a JSON data file.  Eventually, we will provide a live view of the data; but for now with simplicity being urgent we decided to only require JSON data sets.  The generation of the JSON data sets is described in another part of this document.  For now, we are providing a test set of JSON data files to better understand the structure of the data along with the program which interprets the data and a sample set of views.
 
 Users are welcome to generate out their own custom views along with the data sets to their liking.
+
+### One repo many views
+
+In the current incarnation of the demo there are four views.
+
+ * view1: vertical scrollable gridlist of cards
+ * view2: horizontal single line scrollable gridlist of cards
+ * view3: table view with [react-autosuggest](https://github.com/moroshko/react-autosuggest)
+ * view4: vertical scrollable gridlist of cards with no avatars
+
+### One view many repos
+
+Each view in the system is accessible via the Views menu.  The repo dropdown
+allows one to switch between different Github repositories while staying on the same view.  If you select a different repo the same view will be persistent.
+
+### High level data flow outline
+
+In all Create-React-App (CRA) applications things kickoff inside **index.js**.  From there you wire up the
+[Redux](https://redux.js.org/introduction)
+state through a Provider interface inside **Root**.  Next up is the **MenuAppBar** which houses the Icons and Menus along with the
+[React-Router](https://reacttraining.com/react-router/core/guides/philosophy)
+Route definitions.  Finally, when you select a view inside the menu Views.
+
+**ShowTheLocation** will select the proper **DataViewWrapper** given the repo name and view name as
+[props](https://reactjs.org/docs/components-and-props.html#props-are-read-only).
+
+### DataViewWrapper
+
+This component has two important variables defined inside it.
+
+```js
+const repoMap = {
+  repo1: "html5-node-diagram.json",
+  repo2: "ivy.json",
+  repo3: "nodejs-sandboxed-fs.json"
+};
+```
+
+The **repoMap** allows one to define their own repositories of
+data that they are interested in observing, showing to others,
+or using for your open source web site.  Say you have an open
+source project on Github, and you want to show the world all of the committers
+on the project.  Or provided you don't have too many stars, all of the
+developers who starred or forked your repo.  This is the type of view
+that might be interesting to you but with your own repositories data
+instead of these sample data sets.
+
+```js
+const template =
+  "https://raw.githubusercontent.com/stormasm/ghdata/master/data1/";
+```
+
+The **template** is the location of where your JSON data files live.
+You can put them anywhere you want, provided you define the template variable.
+
+#### Fetching Data
+
+Now that you have things defined, its time to go out and
+[fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+the data.  For now we are fetching static JSON files from a specific
+Github repo defined in template above, but we could have just as easily fetched the data from the
+[Github Api](https://developer.github.com/v4/).  
+Or if you have other custom data views defined, your own GraphQL or
+REST endpoint.
+
+### DataView
+
+DataView is a switch or set of if statements to grab the selected View from the View Menu in the AppBar.
+
+The actual views themselves are styled any way you like them with
+Material-UI's [styling solution](https://material-ui.com/customization/css-in-js/#material-ui-39-s-styling-solution).  
+
+The **View** is the core of the application in that this is where you do your creative work.  Its your canvas so to speak, to create your data visualization. The rest of the framework is there for your use, you just have to be inventive
+and come up with interesting views of your data.
+
+The View takes in the prop **tileData** which is the data that was fetched from the API in the DataViewWrapper.  Then the tileData is mapped onto each component that you define in your View.
+
+Any custom view that you define will take in tileData as a prop and then its up to you to build out your own styled component View.
+
+### DataView Examples
+
+#### AppBar
+
+At the top of the hierarchy are ways to organize information or
+websites.  All websites need to have an
+[AppBar](https://material-ui.com/demos/app-bar/).  A nice example
+of an AppBar in action is the
+[Material-UI Home Page](https://material-ui.com/).
+There you will
+see the Icon button for drawer open and close.  In the repos
+in this tutorial you
+will see the same functionality.
+
+#### Gridlists
+
+#### Cards
+
+#### React-Autosuggest
 
 # Next.js to Create-React-App
 
