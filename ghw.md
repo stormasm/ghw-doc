@@ -9,10 +9,9 @@ learn how to visualize data using Material-UI.
 
 I have been working with Material-UI now
 since the release of
-[v1.0.0-beta.3](https://github.com/mui-org/material-ui/releases/tag/v1.0.0-beta.3) on July 29, 2017 and
-over that time period I have worked on lots of different projects
-that cover a range of topics and from that knowledge I have come
-up with a tutorial that hits the highlights of things people need
+[v1.0.0-beta.3](https://github.com/mui-org/material-ui/releases/tag/v1.0.0-beta.3) on July 29, 2017. Over that time period I have worked on different projects
+that cover a range of topics. From that experience and knowledge, I have come
+up with a tutorial that hits the highlights of ideas people need
 to know when visualizing JSON data coming from an
 [API endpoint](https://stackoverflow.com/questions/2122604/what-is-an-endpoint).
 
@@ -56,6 +55,89 @@ same cadence of commands.
 npm install
 npm start
 ```
+
+# Next.js to Create-React-App
+
+If you look at the Material-UI docs the main piece of Navigational software is the
+[AppDrawer](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/AppDrawer.js)
+which is derived from
+[Drawer](https://material-ui.com/api/drawer/).
+
+This section is about refactoring AppDrawer from Next.js to Create-React-App
+
+This section will outline the details of how to transform the
+[Material-UI Docs](https://material-ui.com/)
+from Next-js to Create-React-App through a simple code
+example.  
+
+The example code for this section is inside the Github Repo
+[mui-drawer](https://github.com/stormasm/mui-drawer).  All code
+references not referring to the
+actual Material-UI code base will
+refer to the code inside **mui-drawer**.
+
+## The AppDrawer Concept
+
+Currently the Material-UI docs
+[AppDrawer](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/AppDrawer.js)
+are driven by
+[Next-js Routing](https://nextjs.org/docs/#routing)
+by using the Material-UI
+[Link](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/Link.js) component.
+In order to transform the
+[Drawer](https://material-ui.com/demos/drawers/)
+from Next-js to
+[React-Router](https://reacttraining.com/react-router/core/guides/philosophy)
+one must remove references to the Next-js Link inside the
+[AppDrawerNavItem](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/AppDrawerNavItem.js)
+and replace it with the React-Router
+[Link](https://reacttraining.com/react-router/web/api/Link).
+
+## The AppDrawer Details
+
+If you take a look at the Material-UI docs and open the drawer
+you will notice that all of the content inside the drawer is defined
+by an an object called **pages** which is located inside the file
+[withRoot](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/withRoot.js).
+
+Inside this file are two other important functions.
+
+* findActivePage
+* getChildContext
+
+These 3 pieces of code are ported over to their own file
+in the sample code called
+[Drawer](https://github.com/stormasm/mui-drawer/tree/master/fl8/src/Drawer.js)
+
+This code is the basis for the refactor.
+
+## The AppDrawer Code
+
+[mui-drawer](https://github.com/stormasm/mui-drawer)
+is a demo that allows you to navigate inside
+the drawer and show an example delineating a **Chapter**
+in a book and a **Section** inside of the chapter.
+
+Along with the **pages** object and the two functions
+mentioned above this code is the other piece of logic
+located inside the file
+[Drawer](https://github.com/stormasm/mui-drawer/blob/master/fl8/src/Drawer.js)
+that completes the refactor.
+
+
+```js
+const ShowChapterSection = ({ match }) => (
+  <div>
+    <h3>Chapter: {match.params.ch}</h3>
+    <h4>Section: {match.params.sec}</h4>
+  </div>
+);
+```
+
+## More Details
+
+[See this Readme](https://github.com/stormasm/mui-drawer/blob/master/README.md)
+for more details on how to refactor the Material-UI code.
 
 # Data Visualization Framework
 
@@ -206,79 +288,6 @@ The Autosuggest is used to sort through many rows of a table and only display
 particular users that are from a location that gets selected from the list
 of user locations.  There may be more than one user displayed depending
 upon how many users there are that reside in a particular location.
-
-# Next.js to Create-React-App
-
-This section is about refactoring AppDrawer from Next.js to Create-React-App
-
-This section will outline the details of how to transform the
-[Material-UI Docs](https://material-ui.com/)
-from Next-js to Create-React-App through a simple code
-example.  
-
-The example code for this section is inside the Github Repo
-[mui-drawer](https://github.com/stormasm/mui-drawer).  All code
-references not referring to the
-actual Material-UI code base will
-refer to the code inside **mui-drawer**.
-
-## The AppDrawer Concept
-
-Currently the Material-UI docs
-[AppDrawer](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/AppDrawer.js)
-are driven by
-[Next-js Routing](https://nextjs.org/docs/#routing)
-by using the Material-UI
-[Link](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/Link.js) component.
-In order to transform the
-[Drawer](https://material-ui.com/demos/drawers/)
-from Next-js to
-[React-Router](https://reacttraining.com/react-router/core/guides/philosophy)
-one must remove references to the Next-js Link inside the
-[AppDrawerNavItem](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/AppDrawerNavItem.js)
-and replace it with the React-Router
-[Link](https://reacttraining.com/react-router/web/api/Link).
-
-## The AppDrawer Details
-
-If you take a look at the Material-UI docs and open the drawer
-you will notice that all of the content inside the drawer is defined
-by an an object called **pages** which is located inside the file
-[withRoot](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/withRoot.js).
-
-Inside this file are two other important functions.
-
-* findActivePage
-* getChildContext
-
-These 3 pieces of code are ported over to their own file
-in the sample code called
-[Drawer](https://github.com/stormasm/mui-drawer/tree/master/fl7/src/Drawer.js)
-
-This code is the basis for the refactor.
-
-## The AppDrawer Code
-
-[mui-drawer](https://github.com/stormasm/mui-drawer)
-is a demo that allows you to navigate inside
-the drawer and show a example delineating a **Chapter**
-in a book and a **Section** inside of it...
-
-Along with the **pages** object and the two functions
-mentioned above this code is the other piece of logic
-located inside the file
-[Drawer](https://github.com/stormasm/mui-drawer/blob/master/fl7/src/Drawer.js)
-that completes the refactor.
-
-
-```js
-const ShowChapterSection = ({ match }) => (
-  <div>
-    <h3>Chapter: {match.params.ch}</h3>
-    <h4>Section: {match.params.sec}</h4>
-  </div>
-);
-```
 
 # Appendix
 
