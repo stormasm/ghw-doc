@@ -170,7 +170,7 @@ The tutorial repository for Ghw is called **ghw-menu** and is
 Github World (Ghw) is a set of views coming from the [Github API](https://developer.github.com/v4/).
 Using this data visualization framework one can develop new views of data for repositories, users, statistics and anything else that can be derived from this data possibly in concert with other data sets.
 
-The data sets for Ghw are abstracted away from the underlying visualization so that the only thing needed to display the data is a JSON data file.  Eventually, we will provide a live view of the data; but for now with simplicity being urgent we decided to only require JSON data sets.  The generation of the JSON data sets is described in another part of this document.  For now, we are providing a test set of JSON data files to better understand the structure of the data along with the program which interprets the data and a sample set of views.
+The data sets for Ghw are abstracted away from the underlying visualization so that the only thing needed to display the data is a JSON data file.  Eventually, we will provide a live view of the data coming from the Github API; but for now with simplicity being urgent we decided to only require JSON data sets.  The generation of the JSON data sets is described in another part of this document.  For now, we are providing a test set of JSON data files to better understand the structure of the data along with the program which interprets the data and a sample set of views.
 
 Users are welcome to generate out their own custom views along with the data sets to their liking.
 
@@ -233,7 +233,7 @@ You can put them anywhere you want, provided you define the template variable.
 Now that you have things defined, its time to go out and
 [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 the data.  For now we are fetching static JSON files from a specific
-Github repo defined in template above, but we could have just as easily fetched the data from the
+Github repo defined in the template above, but we could have just as easily fetched the data from the
 [Github Api](https://developer.github.com/v4/).  
 Or if you have other custom data views defined, your own GraphQL or
 REST endpoint.
