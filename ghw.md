@@ -313,18 +313,18 @@ as much as I do.
 
 # About this document
 
-This document is created using the awesome github repo
+This document is created using the awesome github repository
 [spec-md](https://github.com/leebyron/spec-md)
+
+This document is located inside
+[this github repository](https://github.com/stormasm/ghw-doc).
 
 ## Links of Interest
 
 For more examples of **spec-md** docs...
 
-This is a clone of the spec-md repo with a personal document of mine
-[spec17](https://stormasm.github.io/spec17/)
-
-The initial motivator for spec-md
+The initial motivator for spec-md was
 [graphql](http://facebook.github.io/graphql/draft/)
 
-The actual spec on spec-md
+The actual spec on
 [spec-md](http://leebyron.com/spec-md/)
