@@ -38,7 +38,7 @@ it uses
 
 Initially, I thought ok, I want to build a Material-UI drawer system
 that uses Create-React-App (CRA) instead of Next.js. At the time, I was relatively new to using Material-UI and thought "oh this would be easy".  Turns out it was more tricky than I initially thought and it ended up taking me
-weeks to really come up with a solution I was happy with.
+days to really come up with a solution I was happy with.
 
 So saving people time on just this one simple concept seemed like something
 that would be valuable to have documented.  From there, I started working on
@@ -67,14 +67,15 @@ This section is about refactoring AppDrawer from Next.js to Create-React-App
 
 This section will outline the details of how to transform the
 [Material-UI Docs](https://material-ui.com/)
-from Next-js to Create-React-App through a simple code
+from Next.js to Create-React-App through a simple code
 example.  
 
-The example code for this section is inside the Github Repo
+The example code for this section is in the github repository
 [mui-drawer](https://github.com/stormasm/mui-drawer).  All code
 references not referring to the
-actual Material-UI code base will
-refer to the code inside **mui-drawer**.
+actual Material-UI
+[docs code base](https://github.com/mui-org/material-ui/tree/master/docs#material-ui-docs)
+will refer to the code inside **mui-drawer**.
 
 ## The AppDrawer Concept
 
