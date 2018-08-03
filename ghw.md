@@ -78,9 +78,22 @@ All of the repositories in this tutorial use the
 
 ### mui-md
 
+This demo shows how to integrate markdown files into your Material-UI application.  Besides using
+[Typography](https://material-ui.com/style/typography/), Markdown is an excellent and simpler way to display your text without having to worry about the formatting issues associated with Typography.
+
+**[MarkdownDocs](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/MarkdownDocs.js)** is used through out all of the Material-UI demos.  There is not an example of how to use it standalone and so I have come up with a nice simple demo that uses the MarkdownDocs code slightly modified.
+
+**[MarkdownElement](https://github.com/mui-org/material-ui/tree/master/packages/material-ui-docs/src/MarkdownElement)** is the core software behind MarkdownDocs.  MarkdownElement is a part of the Material-UI distribution and lives inside the docs package.  Therefore this demo shows how to create a wrapper around MarkdownElement which is essentially the core mission of MarkdownDocs.
+
+Besides the above two pieces of code another part of the demo shows how to use
+**[React Markdown](https://github.com/rexxars/react-markdown)**.
+
+All of the markdown files that are displayed in this demo are loaded remotely from some server that gets defined in the code. It gives one the ability to have a static Markdown File Server for any markdown files you want to display in your application.
+
 ### mui-drawer
 
-There are two standard ways to navigate inside Material-UI web applications and they are **[drawers](https://material-ui.com/demos/drawers/)** and **[menus](https://material-ui.com/demos/menus/)**.  The software for the drawer system is located inside Material-UI **[docs](https://github.com/mui-org/material-ui/tree/master/docs#material-ui-docs)** and is not part of a released NPM repo (yet).  Therefore, I have broken out the drawer code into this demo to show how to use it standalone.
+There are two standard ways to navigate inside Material-UI; **[drawers](https://material-ui.com/demos/drawers/)** and **[menus](https://material-ui.com/demos/menus/)**.  The software for the [AppDrawer](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/AppDrawer.js) is located inside Material-UI **[docs](https://github.com/mui-org/material-ui/tree/master/docs#material-ui-docs)** and is not part of a released NPM repo (yet).  Therefore, I have broken out the drawer code into this demo to show how to use it standalone in the context of Create React App instead of Next.js which is how it is currently implemented.  The key minor change or refactor is to use
+[React Router](https://github.com/ReactTraining/react-router) instead of Next.js for the routing.
 
 ### mui-menu
 
