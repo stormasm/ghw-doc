@@ -205,9 +205,11 @@ This component has two important variables defined inside it.
 
 ```js
 const repoMap = {
-  repo1: "html5-node-diagram.json",
-  repo2: "ivy.json",
-  repo3: "nodejs-sandboxed-fs.json"
+  repo1: "material-ui.json",
+  repo2: "graphql-js.json",
+  repo3: "html5-node-diagram.json",
+  repo4: "nodejs-sandboxed-fs.json",
+  repo5: "ivy.json"
 };
 ```
 
