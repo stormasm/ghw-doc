@@ -78,8 +78,9 @@ All of the repositories in this tutorial use the
 
 ### mui-md
 
-This demo shows how to integrate markdown files into your Material-UI application.  Besides using
-[Typography](https://material-ui.com/style/typography/), Markdown is an excellent and simpler way to display your text without having to worry about the formatting issues associated with Typography.
+This demo shows how to integrate
+[Markdown](https://www.markdownguide.org/getting-started) files into your Material-UI application.  Besides using
+**[Typography](https://material-ui.com/style/typography/)**, Markdown is an excellent and simpler way to display your text without having to worry about the formatting issues associated with Typography.
 
 **[MarkdownDocs](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/MarkdownDocs.js)** is used through out all of the Material-UI demos.  There is not an example of how to use it standalone and so I have come up with a nice simple demo that uses the MarkdownDocs code slightly modified.
 
@@ -88,7 +89,7 @@ This demo shows how to integrate markdown files into your Material-UI applicatio
 Besides the above two pieces of code another part of the demo shows how to use
 **[React Markdown](https://github.com/rexxars/react-markdown)**.
 
-All of the markdown files that are displayed in this demo are loaded remotely from some server that gets defined in the code. It gives one the ability to have a static Markdown File Server for any markdown files you want to display in your application.
+All of the Markdown files that are displayed in this demo are loaded remotely from some server that gets defined in the demo code. It gives one the ability to have a static Markdown File Server for any Markdown files you want to display in your application.
 
 ### mui-drawer
 
