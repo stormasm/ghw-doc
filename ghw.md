@@ -56,6 +56,12 @@ npm install
 npm start
 ```
 
+## Github Worlds
+
+Github Worlds is a set of repositories located inside this tutorial that shows simple visualization techniques using Material-UI
+**[cards](https://material-ui.com/demos/cards/)**.  The idea behind the set of demos is that data is retrieved from the
+**[Github Graphql API](https://developer.github.com/v4/)** and stored in static JSON files which are then retrieved from some cloud server and displayed inside a data visualization of Github API endpoints.  Eventually, (in the future) this data might come live from the Graphql API but for now (in order to reduce complexity) of the demo we decided to use a simpler approach of static JSON files.
+
 # The set of Repositories discussed in this Tutorial
 
 All of the repositories in this tutorial use the
@@ -74,7 +80,11 @@ All of the repositories in this tutorial use the
 
 ### mui-drawer
 
+There are two standard ways to navigate inside Material-UI web applications and they are **[drawers](https://material-ui.com/demos/drawers/)** and **[menus](https://material-ui.com/demos/menus/)**.  The software for the drawer system is located inside Material-UI **[docs](https://github.com/mui-org/material-ui/tree/master/docs#material-ui-docs)** and is not part of a released NPM repo (yet).  Therefore, I have broken out the drawer code into this demo to show how to use it standalone.
+
 ### mui-menu
+
+This is the exact same concept as above with the **mui-drawer** but instead of using drawers it uses Material-UI menus to navigate down to a specific React component.
 
 ### ghw-autosuggest
 
