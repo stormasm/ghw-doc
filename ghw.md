@@ -27,7 +27,7 @@ real world Material-UI application this will hopefully serve your needs.
 ## Create React App
 
 First and foremost I have decided to start out with all of the
-tutorial repos using
+tutorial demos using
 [Create-React-App](https://github.com/facebook/create-react-app).
 
 The Material-UI doc is an excellent example of a real world application,
@@ -37,7 +37,7 @@ it uses
 [Next.js](https://nextjs.org/) at the core for driving its routing.
 
 Initially, I thought ok, I want to build a Material-UI drawer system
-that uses Create-React-App (CRA) instead of Next.js. At the time, I was relatively new to using Material-UI and thought "oh this would be easy".  Turns out it was more tricky than I initially thought and it ended up taking me
+that uses **Create React App** (CRA) instead of Next.js. At the time, I was relatively new to using Material-UI and thought "oh this would be easy".  Turns out it was more tricky than I initially thought and it ended up taking me
 days to really come up with a solution I was happy with.
 
 So saving people time on just this one simple concept seemed like something
@@ -45,9 +45,9 @@ that would be valuable to have documented.  From there, I started working on
 a more sophisticated application that used
 [Menus](https://material-ui.com/demos/menus/) instead of [Drawers](https://material-ui.com/demos/drawers/) and that added more knowledge to understand and think about. Fast forward about a year, and I am finally getting around
 to writing all of these concepts up along with polishing up some nice
-repos that elucidate the concepts.
+demos that elucidate the concepts.
 
-All of the code repositories that this tutorial will reference uses
+All of the demos that this tutorial will reference uses
 CRA which means they all come out of the box the same way with the
 same cadence of commands.
 
@@ -60,12 +60,12 @@ npm start
 
 Github Worlds is a set of repositories located inside this tutorial that shows simple visualization techniques using Material-UI
 **[cards](https://material-ui.com/demos/cards/)**.  The idea behind the set of demos is that data is retrieved from the
-**[Github Graphql API](https://developer.github.com/v4/)** and stored in static JSON files which are then retrieved from some cloud server and displayed inside a data visualization of Github API endpoints.  Eventually, (in the future) this data might come live from the Graphql API but for now (in order to reduce complexity) of the demo we decided to use a simpler approach of static JSON files.
+**[Github Graphql API](https://developer.github.com/v4/)** and stored in static JSON files which are then retrieved from some cloud server and displayed inside a data visualization of Github API endpoints.  Eventually, (in the future) this data might come live from the Graphql API but for now (in order to reduce complexity of the demo) we decided to use a simpler approach of static JSON files.
 
-# The set of Repositories discussed in this Tutorial
+# The set of repositories discussed in this tutorial
 
 All of the repositories in this tutorial use the
-[MIT License](https://en.wikipedia.org/wiki/MIT_License) and are referenced with the **Github Topic** [material-ui-tutorial](https://github.com/search?q=topic%3Amaterial-ui-tutorial&type=Repositories).  They include in order of complexity:
+[MIT License](https://en.wikipedia.org/wiki/MIT_License) and are referenced with the **Github Topic** [material-ui-tutorial](https://github.com/search?q=topic%3Amaterial-ui-tutorial&type=Repositories).  They include in order of complexity from the most simple to slightly more sophisticated code:
 
 ## The List
 
