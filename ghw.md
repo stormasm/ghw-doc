@@ -56,6 +56,32 @@ npm install
 npm start
 ```
 
+# The set of Repositories discussed in this Tutorial
+
+All of the repositories in this tutorial use the
+[MIT License](https://en.wikipedia.org/wiki/MIT_License) and are referenced with the **Github Topic** [material-ui-tutorial](https://github.com/search?q=topic%3Amaterial-ui-tutorial&type=Repositories).  They include in order of complexity:
+
+## The List
+
+* [mui-md](https://github.com/stormasm/mui-md)
+* [mui-drawer](https://github.com/stormasm/mui-drawer)
+* [mui-menu](https://github.com/stormasm/mui-menu)
+* [ghw-autosuggest](https://github.com/stormasm/ghw-autosuggest)
+* [ghw-drawer](https://github.com/stormasm/ghw-drawer)
+* [ghw-menu](https://github.com/stormasm/ghw-menu)
+
+### mui-md
+
+### mui-drawer
+
+### mui-menu
+
+### ghw-autosuggest
+
+### ghw-drawer
+
+### ghw-menu
+
 # Next.js to Create-React-App
 
 If you look at the Material-UI docs the main piece of Navigational software is the
