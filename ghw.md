@@ -344,39 +344,65 @@ upon how many users there are that reside in a particular location.
 
 # Appendix
 
-## Living Document
+## Learning React
 
-If you are interested in participating in this project feel
-free to reach out to me.  I would welcome other developers
-who are passionate
-both about Material-UI and writing excellent
-documentation that makes Material-UI more accessible to others
-who are just getting started in Material-UI to those of us who
-have some experience but want to have a well documented medium
-scale application that shows best practices for software development
-in the Material-UI world.
+If you are coming to React for the first time and are in the learning process of understanding it:
 
-If you have a cool idea about a new view married with a JSON data
-source or just want to fix my grammatical or spelling mistakes
-you can find me on Gitter.
+**Be Patient !**...
 
-But for the most part, I hope you enjoy programming with Material-UI
-as much as I do.
+Once you get React it makes total sense and is clear and easy to understand; but the road to get there can take some people awhile to grok. If you are fluent in more than one language; and you learned the second language as an adult you know how hard it is to get a concept.  Once you got it, you forget how hard it was to get there.  Computer programming is the same idea.  It takes years to truly be good at writing software; but once you are there it is just second nature.  React is not to this level of complexity... But it does take some people awhile.
+
+The React model is truly the next evolutionary step in user interface design.  When you think about computer design and how one transistor can be scaled up to have
+**[billions of transistors in one integrated circuit](https://en.wikipedia.org/wiki/Transistor_count)** and then
+you think about Facebook and the thousands of components that exist inside
+its total application you can begin to understand the power of React.
+
+And that is also where Material-UI starts to shine.  The power of Material-UI and in general **CSS in JS** is not apparent at first look.  But as you start to develop large scale applications and then you realize that **WOW** I can just take this component that I used somewhere else; and drop it right down in my completely other unrelated application is when the light goes on.  Especially because all of the CSS comes along with it.  You no longer need to mess around with pulling CSS out of a much larger CSS file and then merge it into your new application's CSS file.
+
+
+## Links of Interest
+
+ * [Material-UI v1 is out blog post](https://medium.com/material-ui/material-ui-v1-is-out-e73ce13463eb)
+
+ * [A Journey Towards Better Style](https://oliviertassinari.github.io/a-journey-toward-better-style/#/0?_k=hwphr3)
+and the **[github repo](https://github.com/oliviertassinari/a-journey-toward-better-style)**
+
+* [All You Need To Know About CSS-in-JS](https://hackernoon.com/all-you-need-to-know-about-css-in-js-984a72d48ebc)
 
 # About this document
 
 This document is created using the awesome github repository
-[spec-md](https://github.com/leebyron/spec-md)
+**[spec-md](https://github.com/leebyron/spec-md)**
 
 This document is located inside
-[this github repository](https://github.com/stormasm/ghw-doc).
+**[this github repository](https://github.com/stormasm/ghw-doc)**.
 
-## Links of Interest
-
-For more examples of **spec-md** docs...
+## Examples of spec-md docs...
 
 The initial motivator for spec-md was
-[graphql](http://facebook.github.io/graphql/draft/)
+**[graphql](http://facebook.github.io/graphql/draft/)**
 
-The actual spec on
-[spec-md](http://leebyron.com/spec-md/)
+The actual
+**[spec on spec-md](http://leebyron.com/spec-md/)**
+
+## Living Document
+
+If you are interested in participating in this project feel
+free to
+**[reach out to me](https://github.com/stormasm)**.  
+I would welcome other developers
+who are passionate
+both about Material-UI and writing excellent
+documentation. Making Material-UI more accessible to others
+who are just getting started; and to those who
+are experienced developers but want to have a well documented small
+scale application that shows best practices for software development
+in the Material-UI world.
+
+If you have a cool idea about a new view married with the
+[Github Github Graphql API](https://developer.github.com/v4/)
+or just want to fix grammatical or spelling mistakes
+in this tutorial you can find me on Gitter.
+
+But for the most part, I hope you enjoy programming with Material-UI
+as much as I do.
