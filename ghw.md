@@ -389,8 +389,7 @@ The actual
 
 If you are interested in participating in this project feel
 free to
-**[reach out to me](https://github.com/stormasm)**.  
-I would welcome other developers
+**[reach out to me](https://github.com/stormasm)**. I would welcome other developers
 who are passionate
 both about Material-UI and writing excellent
 documentation. Making Material-UI more accessible to others
