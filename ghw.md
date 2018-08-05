@@ -102,9 +102,17 @@ This is the exact same concept as above with the **mui-drawer** but instead of u
 
 ### ghw-autosuggest
 
+Github worlds (ghw) demo similar to the Material-UI demo
+**[Autocomplete](https://material-ui.com/demos/autocomplete/)**
+in the context of the Github worlds data.
+
 ### ghw-drawer
 
+Github worlds (ghw) demo using Drawers as the driver for navigation.
+
 ### ghw-menu
+
+Github Worlds (ghw) demo using Menus as the driver for navigation.
 
 # Next.js to Create-React-App
 
@@ -205,10 +213,9 @@ The concept is simple.  The framework supports views and JSON data.
 
 The views are any React component that can be accepted inside
 [withStyles](https://material-ui.com/customization/css-in-js/#api).
-Examples of this can be
-[Grid Lists](https://material-ui.com/demos/grid-list/) with
-[Cards](https://material-ui.com/demos/cards/) inside them to
-[D3 graphs](https://github.com/stormasm/awesome-d3-react) depicting statistics inside the JSON data set.
+The first example of this is a
+[Grid List](https://material-ui.com/demos/grid-list/) with
+[Cards](https://material-ui.com/demos/cards/) inside them.
 
 The JSON data comes from any API call or endpoint that returns JSON data.  The API call can be GraphQL, REST, or static JSON data sources such as JSON files sitting on your local disk or in your Github repo.
 
@@ -359,6 +366,12 @@ its total application you can begin to understand the power of React.
 
 And that is also where Material-UI starts to shine.  The power of Material-UI and in general **CSS in JS** is not apparent at first look.  But as you start to develop large scale applications and then you realize that **WOW** I can just take this component that I used somewhere else; and drop it right down in my completely other unrelated application is when the light goes on.  Especially because all of the CSS comes along with it.  You no longer need to mess around with pulling CSS out of a much larger CSS file and then merge it into your new application's CSS file.
 
+## Generating out Github Worlds JSON data files
+
+For more details on how to generate out JSON data from the
+**[Github GraphQL API](https://developer.github.com/v4/)**
+check out the README for
+**[Graphql Redis Github](https://github.com/stormasm/graphql-redis-github/blob/master/README.md)**.
 
 ## Links of Interest
 
