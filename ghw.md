@@ -74,22 +74,7 @@ All of the repositories in this tutorial use the
 * [ghw-autosuggest](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-autosuggest)
 * [ghw-drawer](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-drawer)
 * [ghw-menu](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-menu)
-* [mui-markdown](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-md)
-
-### mui-md
-
-This demo shows how to integrate
-[Markdown](https://www.markdownguide.org/getting-started) files into your Material-UI application.  Besides using
-**[Typography](https://material-ui.com/style/typography/)**, Markdown is an excellent and simpler way to display your text without having to worry about the formatting issues associated with Typography.
-
-**[MarkdownDocs](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/MarkdownDocs.js)** is used through out all of the Material-UI demos.  There is not an example of how to use it standalone and so I have come up with a nice simple demo that uses the MarkdownDocs code slightly modified.
-
-**[MarkdownElement](https://github.com/mui-org/material-ui/tree/master/packages/material-ui-docs/src/MarkdownElement)** is the core software behind MarkdownDocs.  MarkdownElement is a part of the Material-UI distribution and lives inside the docs package.  Therefore this demo shows how to create a wrapper around MarkdownElement which is essentially the core mission of MarkdownDocs.
-
-Besides the above two pieces of code another part of the demo shows how to use
-**[React Markdown](https://github.com/rexxars/react-markdown)**.
-
-All of the Markdown files that are displayed in this demo are loaded remotely from some server that gets defined in the demo code. It gives one the ability to have a static Markdown File Server for any Markdown files you want to display in your application.
+* [mui-md](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-md)
 
 ### mui-drawer
 
@@ -113,6 +98,21 @@ Github worlds (ghw) demo using Drawers as the driver for navigation.
 ### ghw-menu
 
 Github Worlds (ghw) demo using Menus as the driver for navigation.
+
+### mui-md
+
+This demo shows how to integrate
+[Markdown](https://www.markdownguide.org/getting-started) files into your Material-UI application.  Besides using
+**[Typography](https://material-ui.com/style/typography/)**, Markdown is an excellent and simpler way to display your text without having to worry about the formatting issues associated with Typography.
+
+**[MarkdownDocs](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/MarkdownDocs.js)** is used through out all of the Material-UI demos.  There is not an example of how to use it standalone and so I have come up with a nice simple demo that uses the MarkdownDocs code slightly modified.
+
+**[MarkdownElement](https://github.com/mui-org/material-ui/tree/master/packages/material-ui-docs/src/MarkdownElement)** is the core software behind MarkdownDocs.  MarkdownElement is a part of the Material-UI distribution and lives inside the docs package.  Therefore this demo shows how to create a wrapper around MarkdownElement which is essentially the core mission of MarkdownDocs.
+
+Besides the above two pieces of code another part of the demo shows how to use
+**[React Markdown](https://github.com/rexxars/react-markdown)**.
+
+All of the Markdown files that are displayed in this demo are loaded remotely from some server that gets defined in the demo code. It gives one the ability to have a static Markdown File Server for any Markdown files you want to display in your application.
 
 # Next.js to Create-React-App
 
