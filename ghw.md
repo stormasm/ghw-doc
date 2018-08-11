@@ -172,7 +172,7 @@ This code is the basis for the refactor.
 
 ## The AppDrawer Code
 
-[mui-drawer](https://github.com/stormasm/mui-drawer)
+[mui-drawer](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-drawer)
 is a demo that allows you to navigate inside
 the drawer and show an example delineating a **Chapter**
 in a book and a **Section** inside of the chapter.
@@ -180,7 +180,7 @@ in a book and a **Section** inside of the chapter.
 Along with the **pages** object and the two functions
 mentioned above this code is the other piece of logic
 located inside the file
-[Drawer](https://github.com/stormasm/mui-drawer/blob/master/fl8/src/Drawer.js)
+[Drawer](https://github.com/stormasm/mui-tutorial-demo/blob/master/mui-drawer/v1/src/containers/Drawer.js)
 that completes the refactor.
 
 
