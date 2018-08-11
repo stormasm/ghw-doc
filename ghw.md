@@ -129,7 +129,7 @@ from Next.js to Create-React-App through a simple code
 example.  
 
 The example code for this section is in the github repository
-[mui-drawer](https://github.com/stormasm/mui-drawer).  All code
+[mui-drawer](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-drawer).  All code
 references not referring to the
 actual Material-UI
 [docs code base](https://github.com/mui-org/material-ui/tree/master/docs#material-ui-docs)
@@ -166,7 +166,7 @@ Inside this file are two other important functions.
 
 These 3 pieces of code are ported over to their own file
 in the sample code called
-[Drawer](https://github.com/stormasm/mui-drawer/tree/master/fl8/src/Drawer.js)
+[Drawer](https://github.com/stormasm/mui-tutorial-demo/blob/master/mui-drawer/v1/src/containers/Drawer.js)
 
 This code is the basis for the refactor.
 
