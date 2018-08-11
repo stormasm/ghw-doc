@@ -195,7 +195,7 @@ const ShowChapterSection = ({ match }) => (
 
 ## More Details
 
-[See this Readme](https://github.com/stormasm/mui-drawer/blob/master/README.md)
+[See this Readme](https://github.com/stormasm/mui-tutorial-demo/blob/master/mui-drawer/code.md)
 for more details on how to refactor the Material-UI code.
 
 # Data Visualization Framework
@@ -222,7 +222,7 @@ The JSON data comes from any API call or endpoint that returns JSON data.  The A
 ## Github World Views
 
 The tutorial repository for Ghw is called **ghw-menu** and is
-[located here on Github](https://github.com/stormasm/ghw-menu).
+[located here on Github](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-menu).
 
 Github World (Ghw) is a set of views coming from the [Github API](https://developer.github.com/v4/).
 Using this data visualization framework one can develop new views of data for repositories, users, statistics and anything else that can be derived from this data possibly in concert with other data sets.
