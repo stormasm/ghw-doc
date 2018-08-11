@@ -388,7 +388,7 @@ This document is created using the awesome github repository
 **[spec-md](https://github.com/leebyron/spec-md)**
 
 This document is located inside
-**[this github repository](https://github.com/stormasm/ghw-doc)**.
+**[this github repository](https://github.com/stormasm/mui-tutorial/blob/master/ghw.md)**.
 
 ## Examples of spec-md docs...
 
