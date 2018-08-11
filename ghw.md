@@ -69,12 +69,12 @@ All of the repositories in this tutorial use the
 
 ## The List
 
-* [mui-md](https://github.com/stormasm/mui-md)
-* [mui-drawer](https://github.com/stormasm/mui-drawer)
-* [mui-menu](https://github.com/stormasm/mui-menu)
-* [ghw-autosuggest](https://github.com/stormasm/ghw-autosuggest)
-* [ghw-drawer](https://github.com/stormasm/ghw-drawer)
-* [ghw-menu](https://github.com/stormasm/ghw-menu)
+* [mui-drawer](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-drawer)
+* [mui-menu](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-menu)
+* [ghw-autosuggest](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-autosuggest)
+* [ghw-drawer](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-drawer)
+* [ghw-menu](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-menu)
+* [mui-markdown](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-md)
 
 ### mui-md
 
