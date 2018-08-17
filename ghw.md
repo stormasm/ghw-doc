@@ -56,11 +56,6 @@ npm install
 npm start
 ```
 
-## Github Worlds
-
-Github Worlds is a set of repositories located inside this tutorial that shows simple visualization techniques using Material-UI
-**[cards](https://material-ui.com/demos/cards/)**.  The idea behind the set of demos is that data is retrieved from the
-**[Github Graphql API](https://developer.github.com/v4/)** and stored in static JSON files which are then retrieved from some cloud server and displayed inside a data visualization of Github API endpoints.  Eventually, (in the future) this data might come live from the Graphql API but for now (in order to reduce complexity of the demo) we decided to use a simpler approach of static JSON files.
 
 # The set of repositories discussed in this tutorial
 
@@ -69,50 +64,15 @@ All of the repositories in this tutorial use the
 
 ## The List
 
-* [mui-drawer](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-drawer)
-* [mui-menu](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-menu)
-* [ghw-autosuggest](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-autosuggest)
-* [ghw-drawer](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-drawer)
-* [ghw-menu](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-menu)
-* [mui-md](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-md)
+### Drawers
 
-### mui-drawer
+* [mui-drawer](https://stormasm.github.io/mui-drawer/)
+* [ghw-drawer](https://muitool.github.io/ghw-drawer/)
 
-There are two standard ways to navigate inside Material-UI; **[drawers](https://material-ui.com/demos/drawers/)** and **[menus](https://material-ui.com/demos/menus/)**.  The software for the [AppDrawer](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/AppDrawer.js) is located inside Material-UI **[docs](https://github.com/mui-org/material-ui/tree/master/docs#material-ui-docs)** and is not part of a released NPM repo (yet).  Therefore, I have broken out the drawer code into this demo to show how to use it standalone in the context of Create React App instead of Next.js which is how it is currently implemented.  The key minor change or refactor is to use
-[React Router](https://github.com/ReactTraining/react-router) instead of Next.js for the routing.
+### Menus
 
-### mui-menu
-
-This is the exact same concept as above with the **mui-drawer** but instead of using drawers it uses Material-UI menus to navigate down to a specific React component.
-
-### ghw-autosuggest
-
-Github worlds (ghw) demo similar to the Material-UI demo
-**[Autocomplete](https://material-ui.com/demos/autocomplete/)**
-in the context of the Github worlds data.
-
-### ghw-drawer
-
-Github worlds (ghw) demo using Drawers as the driver for navigation.
-
-### ghw-menu
-
-Github Worlds (ghw) demo using Menus as the driver for navigation.
-
-### mui-md
-
-This demo shows how to integrate
-[Markdown](https://www.markdownguide.org/getting-started) files into your Material-UI application.  Besides using
-**[Typography](https://material-ui.com/style/typography/)**, Markdown is an excellent and simpler way to display your text without having to worry about the formatting issues associated with Typography.
-
-**[MarkdownDocs](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/MarkdownDocs.js)** is used through out all of the Material-UI demos.  There is not an example of how to use it standalone and so I have come up with a nice simple demo that uses the MarkdownDocs code slightly modified.
-
-**[MarkdownElement](https://github.com/mui-org/material-ui/tree/master/packages/material-ui-docs/src/MarkdownElement)** is the core software behind MarkdownDocs.  MarkdownElement is a part of the Material-UI distribution and lives inside the docs package.  Therefore this demo shows how to create a wrapper around MarkdownElement which is essentially the core mission of MarkdownDocs.
-
-Besides the above two pieces of code another part of the demo shows how to use
-**[React Markdown](https://github.com/rexxars/react-markdown)**.
-
-All of the Markdown files that are displayed in this demo are loaded remotely from some server that gets defined in the demo code. It gives one the ability to have a static Markdown File Server for any Markdown files you want to display in your application.
+* [mui-menu](https://stormasm.github.io/mui-menu/)
+* [ghw-menu](https://muitool.github.io/ghw-menu/)
 
 # Next.js to Create-React-App
 
@@ -198,7 +158,18 @@ const ShowChapterSection = ({ match }) => (
 [See this Readme](https://github.com/stormasm/mui-tutorial-demo/blob/master/mui-drawer/code.md)
 for more details on how to refactor the Material-UI code.
 
-# Data Visualization Framework
+### mui-drawer
+
+There are two standard ways to navigate inside Material-UI; **[drawers](https://material-ui.com/demos/drawers/)** and **[menus](https://material-ui.com/demos/menus/)**.  The software for the [AppDrawer](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/AppDrawer.js) is located inside Material-UI **[docs](https://github.com/mui-org/material-ui/tree/master/docs#material-ui-docs)** and is not part of a released NPM repo (yet).  Therefore, I have broken out the drawer code into this demo to show how to use it standalone in the context of Create React App instead of Next.js which is how it is currently implemented.  The key minor change or refactor is to use
+[React Router](https://github.com/ReactTraining/react-router) instead of Next.js for the routing.
+
+# Github Worlds
+
+Github Worlds is a set of repositories located inside this tutorial that shows simple visualization techniques using Material-UI
+**[cards](https://material-ui.com/demos/cards/)**.  The idea behind the set of demos is that data is retrieved from the
+**[Github Graphql API](https://developer.github.com/v4/)** and stored in static JSON files which are then retrieved from some cloud server and displayed inside a data visualization of Github API endpoints.  Eventually, (in the future) this data might come live from the Graphql API but for now (in order to reduce complexity of the demo) we decided to use a simpler approach of static JSON files.
+
+## A Data Visualization Framework
 
 I am in the process of developing a simple generic data visualization
 framework in the context of a Material-UI tutorial with the main goal of
@@ -207,7 +178,7 @@ Material-UI.  So the tutorial and the framework will develop over time
 in parallel.  As more interesting aspects of the framework get developed
 the associated documentation teaching the Material-UI concepts of how it works will follow.
 
-## The Overall Architecture of the framework
+## The Overall Architecture of the Framework
 
 The concept is simple.  The framework supports views and JSON data.  
 
@@ -372,6 +343,25 @@ For more details on how to generate out JSON data from the
 **[Github GraphQL API](https://developer.github.com/v4/)**
 check out the README for
 **[Graphql Redis Github](https://github.com/stormasm/graphql-redis-github/blob/master/README.md)**.
+
+## Markdown Processing in Material-UI
+
+**[mui-md](https://github.com/stormasm/mui-md)**
+is still in beta code but depicts using Markdown
+in your applications.
+
+This demo shows how to integrate
+[Markdown](https://www.markdownguide.org/getting-started) files into your Material-UI application.  Besides using
+**[Typography](https://material-ui.com/style/typography/)**, Markdown is an excellent and simpler way to display your text without having to worry about the formatting issues associated with Typography.
+
+**[MarkdownDocs](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/MarkdownDocs.js)** is used through out all of the Material-UI demos.  There is not an example of how to use it standalone and so I have come up with a nice simple demo that uses the MarkdownDocs code slightly modified.
+
+**[MarkdownElement](https://github.com/mui-org/material-ui/tree/master/packages/material-ui-docs/src/MarkdownElement)** is the core software behind MarkdownDocs.  MarkdownElement is a part of the Material-UI distribution and lives inside the docs package.  Therefore this demo shows how to create a wrapper around MarkdownElement which is essentially the core mission of MarkdownDocs.
+
+Besides the above two pieces of code another part of the demo shows how to use
+**[React Markdown](https://github.com/rexxars/react-markdown)**.
+
+All of the Markdown files that are displayed in this demo are loaded remotely from some server that gets defined in the demo code. It gives one the ability to have a static Markdown File Server for any Markdown files you want to display in your application.
 
 ## Links of Interest
 
