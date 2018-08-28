@@ -347,7 +347,7 @@ but with the
 being the primary navigation element instead of the
 **[Menu](https://material-ui.com/demos/menus/)**
 
-### The List of Demos in the Material-UI Tutorial
+### The Order
 
 This demo is an extension of
 [mui-menu](https://stormasm.github.io/mui-menu/) and it is assumed that you have already reviewed the concepts and
