@@ -75,7 +75,7 @@ They include in order of complexity from the most simple to slightly more sophis
 * [mui-menu](https://stormasm.github.io/mui-menu/)
 * [ghw-menu](https://muitool.github.io/ghw-menu/)
 
-# The Tutorial Repositories
+# The Repositories
 
 ## mui-drawer
 
