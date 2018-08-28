@@ -56,13 +56,12 @@ npm install
 npm start
 ```
 
-
-# The set of repositories discussed in this tutorial
+# The List
 
 All of the repositories in this tutorial use the
 [MIT License](https://en.wikipedia.org/wiki/MIT_License) and are referenced with the **Github Topic** [material-ui-tutorial](https://github.com/search?q=topic%3Amaterial-ui-tutorial&type=Repositories).  They include in order of complexity from the most simple to slightly more sophisticated code:
 
-## The List
+## The set of repositories
 
 ### Drawers
 
