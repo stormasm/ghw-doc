@@ -76,6 +76,13 @@ All of the repositories in this tutorial use the
 
 # Next.js to Create-React-App
 
+
+## mui-drawer
+
+There are two standard ways to navigate inside Material-UI; **[drawers](https://material-ui.com/demos/drawers/)** and **[menus](https://material-ui.com/demos/menus/)**.  The software for the [AppDrawer](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/AppDrawer.js) is located inside Material-UI **[docs](https://github.com/mui-org/material-ui/tree/master/docs#material-ui-docs)** and is not part of a released NPM repo (yet).  Therefore, I have broken out the drawer code into this demo to show how to use it standalone in the context of Create React App instead of Next.js which is how it is currently implemented.  The key minor change or refactor is to use
+[React Router](https://github.com/ReactTraining/react-router) instead of Next.js for the routing.
+
+
 If you look at the Material-UI docs the main piece of Navigational software is the
 [AppDrawer](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/AppDrawer.js)
 which is derived from
@@ -89,9 +96,8 @@ from Next.js to Create-React-App through a simple code
 example.  
 
 The example code for this section is in the github repository
-[mui-drawer](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-drawer).  All code
-references not referring to the
-actual Material-UI
+[mui-drawer](https://github.com/stormasm/mui-drawer).  All code
+references not referring to the actual Material-UI
 [docs code base](https://github.com/mui-org/material-ui/tree/master/docs#material-ui-docs)
 will refer to the code inside **mui-drawer**.
 
@@ -126,13 +132,13 @@ Inside this file are two other important functions.
 
 These 3 pieces of code are ported over to their own file
 in the sample code called
-[Drawer](https://github.com/stormasm/mui-tutorial-demo/blob/master/mui-drawer/v1/src/containers/Drawer.js)
+[Drawer](https://github.com/stormasm/mui-drawer/blob/master/v2/src/containers/Drawer.js)
 
 This code is the basis for the refactor.
 
 ## The AppDrawer Code
 
-[mui-drawer](https://github.com/stormasm/mui-tutorial-demo/tree/master/mui-drawer)
+[mui-drawer](https://github.com/stormasm/mui-drawer)
 is a demo that allows you to navigate inside
 the drawer and show an example delineating a **Chapter**
 in a book and a **Section** inside of the chapter.
@@ -140,7 +146,7 @@ in a book and a **Section** inside of the chapter.
 Along with the **pages** object and the two functions
 mentioned above this code is the other piece of logic
 located inside the file
-[Drawer](https://github.com/stormasm/mui-tutorial-demo/blob/master/mui-drawer/v1/src/containers/Drawer.js)
+[Drawer](https://github.com/stormasm/mui-drawer/blob/master/v2/src/containers/Drawer.js)
 that completes the refactor.
 
 
@@ -155,13 +161,8 @@ const ShowChapterSection = ({ match }) => (
 
 ## More Details
 
-[See this Readme](https://github.com/stormasm/mui-tutorial-demo/blob/master/mui-drawer/code.md)
+[See this file](https://github.com/stormasm/mui-drawer/blob/master/code.md)
 for more details on how to refactor the Material-UI code.
-
-### mui-drawer
-
-There are two standard ways to navigate inside Material-UI; **[drawers](https://material-ui.com/demos/drawers/)** and **[menus](https://material-ui.com/demos/menus/)**.  The software for the [AppDrawer](https://github.com/mui-org/material-ui/blob/master/docs/src/modules/components/AppDrawer.js) is located inside Material-UI **[docs](https://github.com/mui-org/material-ui/tree/master/docs#material-ui-docs)** and is not part of a released NPM repo (yet).  Therefore, I have broken out the drawer code into this demo to show how to use it standalone in the context of Create React App instead of Next.js which is how it is currently implemented.  The key minor change or refactor is to use
-[React Router](https://github.com/ReactTraining/react-router) instead of Next.js for the routing.
 
 # Github Worlds
 
@@ -192,8 +193,8 @@ The JSON data comes from any API call or endpoint that returns JSON data.  The A
 
 ## Github World Views
 
-The tutorial repository for Ghw is called **ghw-menu** and is
-[located here on Github](https://github.com/stormasm/mui-tutorial-demo/tree/master/ghw-menu).
+The tutorial repository for Ghw is called **ghw-drawer** and is
+[located here on Github](https://github.com/muitool/ghw-drawer).
 
 Github World (Ghw) is a set of views coming from the [Github API](https://developer.github.com/v4/).
 Using this data visualization framework one can develop new views of data for repositories, users, statistics and anything else that can be derived from this data possibly in concert with other data sets.
