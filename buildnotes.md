@@ -27,8 +27,7 @@ actually work and generate out the proper Spec Markdown
 If there is a problem then spec-md will tell you what line
 number the error occured at.
 
-##### At the very end of the build process
-##### You must do this by hand.
+##### At the very end of the build process you must do this by hand.
 
 Add this line of HTML into the file **index.html**.
 
