@@ -36,7 +36,7 @@ number the error occured at.
 
 ##### At the very end of the build process you must do this by hand.
 
-Add this line of HTML into the file **index.html**.
+Add this line of HTML into the file **./out/index.html**.
 
 ```
 <link rel="shortcut icon" href="/mui-tutorial/favicon.ico">
