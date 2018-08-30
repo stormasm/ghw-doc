@@ -19,13 +19,38 @@ To build the doc simply run the following commands
 * npm run watch [if you want hot reloading only]
 * npm run start
 
-At the very end of the process you must do this by hand.
+You must **check and make sure** that the changes you made
+actually work and generate out the proper Spec Markdown
+**index.html** file.  You do this by running one of the above
+*npm* commands.
 
-Go to the directory on your disk for **mui-tutorial**
-and add this line of HTML into the file *index.html*.
+If there is a problem then spec-md will tell you what line
+number the error occured at.
+
+##### At the very end of the build process
+##### You must do this by hand.
+
+Add this line of HTML into the file **index.html**.
 
 ```
 <link rel="shortcut icon" href="/mui-tutorial/favicon.ico">
+```
+
+In this location in the <head> tag at the very top of the file...
+
+```
+<!DOCTYPE html>
+<!-- Built with spec-md -->
+<html><head><meta charset="utf-8"><title>Material-UI Data Visualization Tutorial</title>
+
+<link rel="shortcut icon" href="/mui-tutorial/favicon.ico">
+
+<style>body {
+  color: #333333;
+  font: 13pt/18pt Cambria, "Palatino Linotype", Palatino, "Liberation Serif", serif;
+  margin: 6rem auto 3rem;
+  max-width: 780px;
+}
 ```
 
 Eventually we will automate this process using
