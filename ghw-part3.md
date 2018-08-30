@@ -81,7 +81,7 @@ So there are three main pieces to the tutorial and they are:
 * [ghw-part2](https://github.com/stormasm/mui-tutorial-src/blob/master/ghw-part2.md) **which gets built by the script**
 * [ghw-part3](https://github.com/stormasm/mui-tutorial-src/blob/master/ghw-part3.md)
 
-#### ghw-part2 in more detail...
+### ghw-part2 in more detail...
 
 The file, **ghw-part2** gets built by the script and is a concatenation
 of all of the *README.md* files in all of the tutorial demos in a particular order that flows and reads like a book or tutorial.  So it is important if you are editing any of these files that you keep that in mind.  **Do Not** edit the files in the repository
@@ -89,6 +89,10 @@ of all of the *README.md* files in all of the tutorial demos in a particular ord
 
 * ghw-part1
 * ghw-part3
+
+For more details on what you need to do in building the tutorial
+[read this document](https://github.com/stormasm/mui-tutorial-src/blob/master/buildnotes.md)
+as well.
 
 ## Living Document
 
