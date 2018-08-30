@@ -2,20 +2,27 @@
 This code is a fork of
 [spec-md](https://github.com/leebyron/spec-md)
 
+Make sure you have retrieved the following github repositories
+and that they are located inside the same directory structure
+as this repository because the script below needs to grab
+the respective README.md files.
+
+* [mui-drawer](https://stormasm.github.io/mui-drawer/)
+* [ghw-drawer](https://muitool.github.io/ghw-drawer/)
+* [mui-menu](https://stormasm.github.io/mui-menu/)
+* [ghw-menu](https://muitool.github.io/ghw-menu/)
+
+
 Besides this repository
 [mui-tutorial-src](https://github.com/stormasm/mui-tutorial-src)
 you will also need to grab
 **[mui-tutorial](https://github.com/stormasm/mui-tutorial)**
-as the **deployme** script copies files into here.
+as the **./scripts/deployme** script copies files into here.
 
 To build the doc simply run the following commands
 
 * yarn
 * ./scripts/buildme
-* npm run build [the first time]
-*
-* Then subsequent builds you can do...
-*
 * npm run watch [if you want hot reloading only]
 * npm run start
 
