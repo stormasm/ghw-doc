@@ -55,6 +55,13 @@ should look like after adding the above line...
 }
 ```
 
+Then finally copy the files over to
+[mui-tutorial](https://github.com/stormasm/mui-tutorial)
+
+with this command
+
+* ./scripts/deployme
+
 Eventually we will automate this process using
 [Print Options](https://github.com/leebyron/spec-md/blob/master/spec/Usage.md#print-options)
 
