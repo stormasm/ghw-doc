@@ -12,4 +12,4 @@ This will build the doc for the tutorial...
 
 [For more details](https://github.com/leebyron/spec-md/blob/master/spec/Usage.md)
 
-[Contributing to Spec-Markdown](https://github.com/leebyron/spec-md/blob/master/CONTRIBUTING.md)
+Contributing to **[Spec-Markdown](https://github.com/leebyron/spec-md/blob/master/CONTRIBUTING.md)**
