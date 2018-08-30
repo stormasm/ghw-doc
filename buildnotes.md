@@ -6,3 +6,5 @@ To build the doc simply run the following two commands
 * npm run start
 
 This will build the doc for the ghw system...
+
+[Contributing to Spec-Markdown](https://github.com/leebyron/spec-md/blob/master/CONTRIBUTING.md)
