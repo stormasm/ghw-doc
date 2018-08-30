@@ -69,6 +69,9 @@ The actual
 
 ## Editing this document and pull requests
 
+Please read this section carefully and understand it prior
+to issuing a pull request on the tutorial.
+
 This document has several pieces which all come together to form
 the tutorial.  If you want to understand how the tutorial gets built simply **[read the bash script.](https://github.com/stormasm/mui-tutorial-src/blob/master/scripts/buildme)**
 
