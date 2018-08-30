@@ -7,10 +7,10 @@ and that they are located inside the same directory structure
 as this repository because the script below needs to grab
 the respective README.md files.
 
-* [mui-drawer](https://stormasm.github.io/mui-drawer/)
-* [ghw-drawer](https://muitool.github.io/ghw-drawer/)
-* [mui-menu](https://stormasm.github.io/mui-menu/)
-* [ghw-menu](https://muitool.github.io/ghw-menu/)
+* [mui-drawer](https://github.com/stormasm/mui-drawer)
+* [ghw-drawer](https://github.com/muitool/ghw-drawer)
+* [mui-menu](https://github.com/stormasm/mui-menu)
+* [ghw-menu](https://github.com/muitool/ghw-menu)
 
 
 Besides this repository
