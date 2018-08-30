@@ -9,3 +9,5 @@ ROOT=/tmp14
 cat $ROOT/mui-tutorial-src/ghw-part1.md $ROOT/mui-drawer/README.md $ROOT/mui-menu/README.md $ROOT/ghw-drawer/README.md $ROOT/ghw-menu/README.md > $ROOT/mui-tutorial-src/ghw-part2.md
 
 cat $ROOT/mui-tutorial-src/ghw-part2.md $ROOT/mui-tutorial-src/ghw-part3.md > $ROOT/mui-tutorial-src/ghw.md
+
+cp $ROOT/mui-tutorial-src/ghw.md $ROOT/mui-tutorial-src/README.md

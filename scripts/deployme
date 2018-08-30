@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Change the ROOT variable below to match the location
+# of the repos location which should all be in the same
+# root directory
+
+ROOT=/tmp14
+
+cp $ROOT/mui-tutorial-src/README.md $ROOT/mui-tutorial/README.md
+
+cp $ROOT/mui-tutorial-src/out/index.html $ROOT/mui-tutorial/index.html
