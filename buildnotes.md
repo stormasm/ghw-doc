@@ -34,9 +34,12 @@ Add this line of HTML into the file **index.html**.
 
 ```
 <link rel="shortcut icon" href="/mui-tutorial/favicon.ico">
-```
 
 In this location in the <head> tag at the very top of the file...
+```
+
+These next lines of HTML is what your **index.html** file
+should look like after adding the above line...
 
 ```
 <!DOCTYPE html>
