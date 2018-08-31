@@ -11,17 +11,16 @@ I have been working with Material-UI now
 since the release of
 [v1.0.0-beta.3](https://github.com/mui-org/material-ui/releases/tag/v1.0.0-beta.3) on July 29, 2017. Over that time period I have worked on different projects
 that cover a range of topics. From that experience and knowledge, I have come
-up with a tutorial that hits the highlights of ideas people need
+up with a tutorial that hits the highlights of concepts people need
 to know when visualizing JSON data coming from an
 [API endpoint](https://stackoverflow.com/questions/2122604/what-is-an-endpoint).
 
 The demos in the
 [Material-UI documentation](https://material-ui.com/)
 are an excellent starting
-point to better understand how Material-UI works in the context
-of one React component.
-
-But if you want a better understanding of a slightly more complicated
+point to better understand how Material-UI works.
+This tutorial further expands those concepts with
+a slightly more complicated
 real world Material-UI application this will hopefully serve your needs.
 
 ## Create React App
@@ -45,7 +44,7 @@ that would be valuable to have documented.  From there, I started working on
 a more sophisticated application that used
 [Menus](https://material-ui.com/demos/menus/) instead of [Drawers](https://material-ui.com/demos/drawers/) and that added more knowledge to understand and think about. Fast forward about a year, and I am finally getting around
 to writing all of these concepts up along with polishing up some nice
-demos that elucidate the concepts.
+demos that illustrate the concepts.
 
 All of the demos that this tutorial will reference uses
 CRA which means they all come out of the box the same way with the
