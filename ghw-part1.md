@@ -55,7 +55,13 @@ npm install
 npm start
 ```
 
-# The List
+# Github Worlds
+
+Github Worlds, from here on shortened to **ghw**, is a set of repositories located inside this tutorial that shows simple visualization techniques using Material-UI
+**[cards](https://material-ui.com/demos/cards/)**.  The idea behind the set of demos is that data is retrieved from the
+**[Github Graphql API](https://developer.github.com/v4/)** and stored in static JSON files which are then retrieved from some cloud server and displayed inside a data visualization of Github API endpoints.  Eventually, (in the future) this data might come live from the Graphql API but for now (in order to reduce complexity of the demo) we decided to use a simpler approach of static JSON files.
+
+## The List
 
 All of the repositories in this tutorial use the
 [MIT License](https://en.wikipedia.org/wiki/MIT_License) and are referenced with the
@@ -64,12 +70,12 @@ All of the repositories in this tutorial use the
 
 They include in order of complexity from the most simple to slightly more sophisticated code:
 
-## Drawers
+### Drawers
 
 * [mui-drawer](https://stormasm.github.io/mui-drawer/)
 * [ghw-drawer](https://muitool.github.io/ghw-drawer/)
 
-## Menus
+### Menus
 
 * [mui-menu](https://stormasm.github.io/mui-menu/)
 * [ghw-menu](https://muitool.github.io/ghw-menu/)
