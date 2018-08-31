@@ -7,7 +7,7 @@ If you are coming to React for the first time and are in the learning process of
 
 **Be Patient !**...
 
-Once you get React it makes total sense and is clear and easy to understand; but the road to get there can take some people awhile to grok. If you are fluent in more than one language; and you learned the second language as an adult you know how hard it is to get a concept.  Once you got it, you forget how hard it was to get there.  Computer programming is the same idea.  It takes years to truly be good at writing software; but once you are there it is just second nature.  React is not to this level of complexity... But it does take some people awhile.
+Once you get React it makes total sense and is clear and easy to understand; but the road to get there can take some people a while to grok. If you are fluent in more than one language; and you learned the second language as an adult you know how hard it is to get a concept.  Once you got it, you forget how hard it was to get there.  Computer programming is the same idea.  It takes years to truly be good at writing software; but once you are there it is just second nature.  React is not to this level of complexity... But it does take some people a period of time.
 
 The React model is truly the next evolutionary step in user interface design.  When you think about computer design and how one transistor can be scaled up to have
 **[billions of transistors in one integrated circuit](https://en.wikipedia.org/wiki/Transistor_count)** and then
